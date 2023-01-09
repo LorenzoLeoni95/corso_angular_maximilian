@@ -1,0 +1,8 @@
+<input type="username" [(ngModel)]="username" /> <span>{{ username }}</span>
+<button (click)="resetUsername()" [disabled]="username == ''">reset</button>
+
+<!-- ngModel two way property binding CHE SCATENA CONTEMPORANEAMENTE SIA STRING INTERPOLATION CHE PROPERTY BINDING [()]
+  poi c'è string interpolation {{}}
+  infine property binding [property]='NomeVariabile'
+
+DATA BINDING COMMUNICATION TRA TYPESCRIPT E HTML-->
