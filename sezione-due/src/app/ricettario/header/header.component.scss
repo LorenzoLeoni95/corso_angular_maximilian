@@ -1,0 +1,41 @@
+.nav-flex {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    background-color:white;
+    padding: 0 2rem;
+    text-align: right;
+    box-shadow: 2px 4px 5px -2px rgb(0 0 0 / 16%);
+    opacity: 1;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      cursor: pointer;
+      height: 2.2rem;
+    }
+    .ul-desk {
+      @media screen and (max-width: 1250px) {
+        display: none;
+      }
+  
+      display: flex;
+      margin: 0;  
+      .item {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        margin: 0 0.8rem;
+        padding: 1rem 0.5rem;
+        list-style: none;
+      }
+    }
+  
+    .button-container {
+      padding: 0.3rem;
+      @media screen and (min-width: 1250px) {
+        display: none;
+      }
+    }
+  }
