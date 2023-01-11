@@ -1,0 +1,38 @@
+.nav-flex {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  background-color: white;
+  padding: 0 2rem;
+  text-align: right;
+  height: 60px;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    height: 40px;
+    cursor: pointer;
+  }
+  .active {
+    border-bottom: 6px solid green;
+    height: auto;
+    margin-bottom: -1.8rem;
+  }
+  .ul-desk {
+    @media screen and (max-width: 1250px) {
+      display: none;
+    }
+    display: flex;
+    margin: 0;
+    .item {
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      padding: 0 2rem;
+      list-style: none;
+    }
+  }
+}

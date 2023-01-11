@@ -1,0 +1,76 @@
+<!-- <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="nav-header">
+      <a href="#" class="navbar-brand">Libro Ricette</a>
+    </div>
+    <div class="collapse nav-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Ricette</a></li>
+        <li><a href="#">Shopping list</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <ul class="dropdown-menu">
+            <li><a href="#">salva</a></li>
+            <li><a href="#">aggiorna data</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<div class="nav-flex">
+  <div class="navbar-header">
+    <h1>Recipe Book</h1>
+  </div>
+  <ul class="ul-desk">
+    <li
+      class="item"
+      routerLinkActive="active"
+      [routerLink]="['/page-home/home']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Recipes
+    </li>
+    <li
+      class="item"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: false }"
+    >
+      Shopping List
+    </li>
+    <li
+      class="item"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      Storico
+    </li>
+    <li
+      class="item"
+      routerLinkActive="active"
+      [routerLink]="['/page-login/login']"
+    >
+      <i class="pi pi-sign-out"></i>
+    </li>
+  </ul>
+  <div class="dropdown">
+    <div ngbDropdown class="dropdown">
+      <button
+        ngbDropdownToggle
+        class="btn btn-secondary"
+        type="button"
+        id="dropdownMenuButton1"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+
+      <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1">
+        <li><a ngbDropdownItem href="#">Save Data</a></li>
+
+        <li><a ngbDropdownItem href="#">Fetch Data</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
